@@ -42,3 +42,18 @@ const diceImage2 = () => {
     }
 }
 diceImage2();
+
+
+const winner = () => {
+    if (randomNumber1 > randomNumber2) {
+        console.log("Dice 1 wins");
+        document.querySelector("h1").innerHTML = "Dice 1 Wins";
+    }
+    else if (randomNumber1 < randomNumber2){
+        document.querySelector("h1").innerHTML = "Dice 2 Wins";
+    }
+    else {
+        document.querySelector("h1").innerHTML = "It's a draw !!";
+    }
+}
+    winner();
